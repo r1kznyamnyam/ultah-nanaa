@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title> HBD nanaaaaaaaaaaaaaa</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <head>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+    </head>
+    <body style="background-image: url(https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dhttps://plus.unsplash.com/premium_photo-1701689330381-9825b1a4d277?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);" class="flex justify-center h-screen items-center">
+    </body> 
+        <div class="bg-white border px-10 py-8 border-4 border-gray-300 shadow-lg shadow-blue-300 rounded-xl text-center animate__animated animate__backInDown m-8 w-80" id="kartu">
+            <h1 class="text-3xl"> Happy Birthday</h1>
+            <h1 class="text-4xl text-pink-500 font-bold animate__animated animate__pulse animate__infinite">Zolyda Naja</h1>
+            <button class="p-2 bg-blue-600 text-white rounded mt-5 hover:bg-blue-900 transition ease-in w-full animate__animated animate__delay-1s animate__tada" onclick="ubahkartu()">click here!!</button>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+        <script>confetti({
+  particleCount: 100,
+  spread: 70,
+  origin: { y: 0.6 },
+        });
+        let kartu = document.getElementById('kartu');
+        function ubahkartu() {
+            kartu.innerHTML = ` <h1 class="font-semibold text-wrap animate__animated animate__zoomIn"> Hai selamat ulang tahun nanaaa, semoga tahun ini makin banyak kebahagiaan, dan segala impian jadi kenyataan. Terus semoga kita bisa bareng-bareng, dan saling melengkapi satu sama lain.</h1>
+            
+            <h2 class="mt-3 animate__animated animate__fadeIn"> Dari : kemput </h2>
+            <button class="p-2 bg-blue-600 text-white rounded mt-5 hover:bg-blue-900 transition ease-in w-full animate__animated animate__delay-1s animate__tada" onclick="refresh()">Tutup :3</button>`
+            ;
+             }
+        function refresh() {
+            location.reload();
+        
+        } 
+    </script>
+    </body>
+</html>
